@@ -2,6 +2,8 @@ package com.rochiyat.boot.curd.postgre.jpa.lombok.controllers;
 
 import com.rochiyat.boot.curd.postgre.jpa.lombok.models.Posting;
 import com.rochiyat.boot.curd.postgre.jpa.lombok.repositories.PostingRepository;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Tag(name = "Posting", description = "Posting APIs Management")
 @CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping("/api")
